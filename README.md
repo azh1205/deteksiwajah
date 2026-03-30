@@ -1,4 +1,4 @@
- [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-cyan.svg)](LICENSE)
  [![Made With Python](https://img.shields.io/badge/Made%20With-Python-blue.svg)]()
 
 # 🔍 DeteksiWajah – Face Detection & Digital Forensics Suite
