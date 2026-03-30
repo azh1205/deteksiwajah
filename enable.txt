@@ -1,0 +1,19 @@
+const vue = document.querySelector('[data-pid]').__vue__;
+const parent = vue.$parent;
+
+document.addEventListener('mousedown', e => { window._lastMouseEvent = e; }, true);
+
+const originalHandleGoDetails = parent.$options.methods.handleGoDetails.bind(parent);
+
+parent.handleGoDetails = function(p) {
+    const isCtrl = window._lastMouseEvent?.ctrlKey || window._lastMouseEvent?.metaKey;
+    console.log('handleGoDetails called, pdpUrl:', p.pdpUrl, 'isCtrl:', isCtrl);
+    
+    if (isCtrl) {
+        window.open(p.pdpUrl, '_blank');
+        return;
+    }
+    return originalHandleGoDetails(p);
+};
+
+console.log('parent patched!');

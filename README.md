@@ -1,3 +1,6 @@
+ [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+ [![Made With Python](https://img.shields.io/badge/Made%20With-Python-blue.svg)]()
+
 # 🔍 DeteksiWajah – Face Detection & Digital Forensics Suite
 
 A desktop application built with Python for face verification, live face recognition, digital image forensics, and face database management — powered by [DeepFace](https://github.com/serengil/deepface) and [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter).
